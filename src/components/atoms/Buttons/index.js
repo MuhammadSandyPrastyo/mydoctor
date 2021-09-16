@@ -1,7 +1,14 @@
 import React from 'react'
 import { ProgressViewIOSComponent, StyleSheet, Text, TextPropTypes, TouchableOpacity, View } from 'react-native'
+import IconButton from './IconButton.js'
 
-export default function Buttons({ type, title, onPress }) {
+export default function Buttons({ type, title, onPress, status, send }) {
+    if (send == 'yes') {
+        return (
+
+            <IconButton status={status} onPress={onPress} />
+        )
+    }
     return (
         <TouchableOpacity style={styles.container(type)} onPress={onPress}>
             <Text style={styles.text(type)}>{title}</Text>

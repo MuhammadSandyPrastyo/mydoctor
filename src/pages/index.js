@@ -9,6 +9,7 @@ import HospitalPage from './HospitalPage';
 import ListChatting from './ListChatting';
 import UserProfile from './UserProfile';
 import EditProfile from './EditProfile';
+import DoctorMessage from './DoctorMessages';
 
 export {
     Splash,
@@ -22,4 +23,5 @@ export {
     ListChatting,
     UserProfile,
     EditProfile,
+    DoctorMessage,
 };

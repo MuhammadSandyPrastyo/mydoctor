@@ -4,8 +4,11 @@ const MainColor = {
     grey1: '#495A75',
     grey2: '#7D8797',
     grey3: '#EEEEEE',
+    grey4: '#EDEEF0',
     blue1: '#112340',
-    white: '#ffffff'
+    blue2: '#0066CB',
+    white: '#ffffff',
+    black: '#000000'
 }
 
 export const colors = {
@@ -22,4 +25,21 @@ export const colors = {
         tabInActive: MainColor.grey1,
     },
     line: MainColor.grey3,
+    chat: {
+        background: {
+            me: MainColor.green2,
+            opponent: MainColor.green1,
+        },
+        text: {
+            me: MainColor.black,
+            opponent: MainColor.white,
+        },
+        textInput: {
+            background: MainColor.grey4,
+        }
+    },
+    buttonIcon: {
+        on: MainColor.blue2,
+        off: MainColor.grey4,
+    }
 }

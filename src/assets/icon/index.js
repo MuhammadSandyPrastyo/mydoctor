@@ -18,6 +18,8 @@ import ICEdit from './icon-edit.svg';
 import ICLanguage from './icon-language.svg';
 import ICRate from './icon-rate.svg';
 import ICHelp from './icon-help.svg';
+import ICSendOff from './icon-sendOff.svg';
+import ICSendOn from './icon-sendOn.svg';
 
 export {
     ICBackDark,
@@ -39,5 +41,7 @@ export {
     ICEdit,
     ICLanguage,
     ICRate,
-    ICHelp
+    ICHelp,
+    ICSendOff,
+    ICSendOn
 };

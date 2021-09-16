@@ -11,26 +11,32 @@ export default function ListChatting({ navigation }) {
                 image={DummyDoctor8}
                 name='Alexander Jannie'
                 desc='Wanita'
+                next
+                onPress={() => navigation.navigate('DoctorMessage')}
             />
             <ListMessagesDoctor
                 image={DummyDoctor8}
                 name='Alexander Jannie'
                 desc='Wanita'
+                next
             />
             <ListMessagesDoctor
                 image={DummyDoctor8}
                 name='Alexander Jannie'
                 desc='Wanita'
+                next
             />
             <ListMessagesDoctor
                 image={DummyDoctor8}
                 name='Alexander Jannie'
                 desc='Wanita'
+                next
             />
             <ListMessagesDoctor
                 image={DummyDoctor8}
                 name='Alexander Jannie'
                 desc='Wanita'
+                next
             />
         </View>
     )

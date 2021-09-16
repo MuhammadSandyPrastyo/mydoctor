@@ -2,8 +2,13 @@ import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { ICBackDark, ICBackLight } from '../../../assets';
 import { colors, fonts } from '../../../utils';
+import HeaderProfile from './HeaderProfile';
 
-export default function Header({ title, navigation, onPress, type }) {
+export default function Header({ title, navigation, onPress, type, img, name, job }) {
+
+    if (type == 'profile') {
+        return <HeaderProfile img={img} name={name} job={job} onPress={onPress} />
+    }
 
     return (
         <View style={styles.container(type)}>

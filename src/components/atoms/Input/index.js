@@ -2,14 +2,14 @@ import React from 'react'
 import { StyleSheet, Text, TextInput, View } from 'react-native'
 import Gaps from '../Gaps'
 
-export default function Input({ label, disable, password }) {
+export default function Input({ label, disable, password, placeHoldDis }) {
 
     if (disable) {
         return (
             <View>
                 <Text style={styles.labels}>{label}</Text>
                 <Gaps heights={6} />
-                <TextInput style={styles.inputDis} editable={false}></TextInput>
+                <TextInput style={styles.inputDis} editable={false} placeholder={placeHoldDis}></TextInput>
             </View>
         )
     }
