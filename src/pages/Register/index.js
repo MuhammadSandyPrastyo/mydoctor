@@ -4,10 +4,10 @@ import { ICBackDark } from '../../assets'
 import { Buttons, Gaps, Header, Input } from '../../components'
 
 
-export default function Register() {
+export default function Register({ navigation }) {
     return (
         <View style={styles.wrapper}>
-            <Header title="Daftar Akun" />
+            <Header title="Daftar Akun" onPress={() => navigation.goBack()} />
             <View style={styles.container}>
                 <Input label="Full Name" />
                 <Gaps heights={24} />
@@ -17,7 +17,7 @@ export default function Register() {
                 <Gaps heights={24} />
                 <Input label="Password" />
                 <Gaps heights={40} />
-                <Buttons title="Continue" />
+                <Buttons title="Continue" onPress={() => navigation.navigate("UploadPhoto")} />
             </View>
         </View>
 

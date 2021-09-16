@@ -4,7 +4,7 @@ import { ILLogo } from '../../assets'
 import { Input, Link, Buttons, Gaps } from '../../components'
 
 
-export default function SignIn() {
+export default function SignIn({ navigation }) {
     return (
         <View style={styles.container}>
             <ILLogo />
@@ -17,7 +17,7 @@ export default function SignIn() {
             <Gaps heights={10} />
             <Link text="Forgot My Password" size={12} />
             <Gaps heights={40} />
-            <Buttons title="Sign In" />
+            <Buttons title="Sign In" onPress={() => navigation.replace('MyApp')} />
             <Gaps heights={30} />
             <Link text="Create New Account" align="center" size={18} />
 
