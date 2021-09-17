@@ -4,10 +4,10 @@ import { ICBackDark, ICBackLight } from '../../../assets';
 import { colors, fonts } from '../../../utils';
 import HeaderProfile from './HeaderProfile';
 
-export default function Header({ title, navigation, onPress, type, img, name, job }) {
+export default function Header({ title, navigation, onPress, type, img, name, job, onPress1, onPress2 }) {
 
     if (type == 'profile') {
-        return <HeaderProfile img={img} name={name} job={job} onPress={onPress} />
+        return <HeaderProfile img={img} name={name} job={job} onPress1={onPress1} onPress2={onPress2} />
     }
 
     return (

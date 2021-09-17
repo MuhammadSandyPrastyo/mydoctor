@@ -3,17 +3,17 @@ import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native'
 import { ICBackLight } from '../../../assets'
 import { colors, fonts } from '../../../utils'
 
-export default function HeaderProfile({ img, name, job, onPress }) {
+export default function HeaderProfile({ img, name, job, onPress1, onPress2 }) {
     return (
         <View style={styles.container}>
             <TouchableOpacity>
-                <ICBackLight onPress={onPress} />
+                <ICBackLight onPress={onPress1} />
 
             </TouchableOpacity>
-            <View style={styles.textWrapper}>
+            <TouchableOpacity style={styles.textWrapper} onPress={onPress2}>
                 <Text style={styles.name}>{name}</Text>
                 <Text style={styles.job}>{job}</Text>
-            </View>
+            </TouchableOpacity>
             <Image source={img} style={styles.image} />
         </View>
     )

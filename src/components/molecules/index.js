@@ -6,6 +6,7 @@ import ListNews from './ListNews';
 import ListMessagesDoctor from './ListMessagesDoctor';
 import ListHospital from './ListHospital';
 import ChatItems from './ChatItems';
+import DescText from './DescText';
 
 
 export {
@@ -17,4 +18,5 @@ export {
     ListMessagesDoctor,
     ListHospital,
     ChatItems,
+    DescText,
 };

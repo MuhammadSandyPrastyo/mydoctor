@@ -20,6 +20,8 @@ import ICRate from './icon-rate.svg';
 import ICHelp from './icon-help.svg';
 import ICSendOff from './icon-sendOff.svg';
 import ICSendOn from './icon-sendOn.svg';
+import ICMale from './icon_male.svg';
+import ICFemale from './icon_female.svg';
 
 export {
     ICBackDark,
@@ -43,5 +45,7 @@ export {
     ICRate,
     ICHelp,
     ICSendOff,
-    ICSendOn
+    ICSendOn,
+    ICMale,
+    ICFemale
 };

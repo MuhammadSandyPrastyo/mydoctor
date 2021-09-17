@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native'
-import { DummyDoctor7 } from '../../../assets'
+import { DummyDoctor8 } from '../../../assets'
 import { colors, fonts } from '../../../utils'
 
 export default function ChatItems({ isMe, text, time }) {
@@ -17,7 +17,7 @@ export default function ChatItems({ isMe, text, time }) {
 
     return (
         <View style={styles.container2}>
-            <Image source={DummyDoctor7} style={styles.image} />
+            <Image source={DummyDoctor8} style={styles.image} />
             <View>
                 <View style={styles.wrapper2}>
                     <Text style={styles.text2}>{text}</Text>

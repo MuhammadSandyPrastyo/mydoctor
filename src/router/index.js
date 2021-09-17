@@ -3,6 +3,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import {
     DoctorMessage,
     DoctorPage,
+    DoctorProfile,
     EditProfile,
     GetStarted,
     HospitalPage,
@@ -34,7 +35,7 @@ function MyApp() {
 
 const Router = () => {
     return (
-        <Stack.Navigator initialRouteName="DoctorMessage" screenOptions={{ headerShown: false }}>
+        <Stack.Navigator initialRouteName="Register" screenOptions={{ headerShown: false }}>
             <Stack.Screen
                 name="Splash"
                 component={Splash} />
@@ -69,6 +70,10 @@ const Router = () => {
             <Stack.Screen
                 name="DoctorMessage"
                 component={DoctorMessage}
+            />
+            <Stack.Screen
+                name="DoctorProfile"
+                component={DoctorProfile}
             />
         </Stack.Navigator>
     )

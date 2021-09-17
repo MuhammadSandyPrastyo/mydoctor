@@ -5,6 +5,7 @@ const MainColor = {
     grey2: '#7D8797',
     grey3: '#EEEEEE',
     grey4: '#EDEEF0',
+    grey5: '#E9E9E9',
     blue1: '#112340',
     blue2: '#0066CB',
     white: '#ffffff',
@@ -41,5 +42,9 @@ export const colors = {
     buttonIcon: {
         on: MainColor.blue2,
         off: MainColor.grey4,
+    },
+    border: {
+        onFocus: MainColor.blue1,
+        onBlur: MainColor.grey5,
     }
 }

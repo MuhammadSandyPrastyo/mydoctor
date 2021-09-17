@@ -1,14 +1,21 @@
+import { NavigationContainer } from '@react-navigation/native'
 import React from 'react'
 import { StyleSheet, Text, TextInput, View } from 'react-native'
-import { DummyDoctor7 } from '../../assets'
+import { DummyDoctor8 } from '../../assets'
 import { Buttons, ChatItems, Header } from '../../components'
 import { colors, fonts } from '../../utils'
 
-export default function DoctorMessage() {
+export default function DoctorMessage({ navigation }) {
     return (
         <View style={styles.container}>
             <View>
-                <Header type='profile' img={DummyDoctor7} name='Nairobi Putri Hayza' job='Dokter Anak' />
+                <Header
+                    type='profile'
+                    img={DummyDoctor8}
+                    name='Nairobi Putri Hayza'
+                    job='Dokter Anak'
+                    onPress1={() => navigation.goBack()}
+                    onPress2={() => navigation.navigate("DoctorProfile")} />
                 <Text style={styles.time}>Senin, 21 Maret, 2020</Text>
                 <ChatItems isMe text="Ibu dokter, apakah memakan jeruk tiap hari itu buruk?" time="4.20 AM" />
                 <ChatItems text="Oh tentu saja tidak karena jeruk itu sangat sehat..." time="4.45 AM" />
@@ -16,7 +23,7 @@ export default function DoctorMessage() {
             </View>
             <View style={styles.wrapper} >
                 <TextInput style={styles.message} placeholder="Tulis pesan untuk Nairobi" />
-                <Buttons status='aktif' send='yes' onPress={() => alert("hello")} />
+                <Buttons status='no' send='yes' onPress={() => alert("hello")} />
             </View>
         </View>
     )
